@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="OneMore" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="wc3-2e-u0O" id="aaG-lp-kBS"/>
+                <outlet property="optionView" destination="ksI-LX-TOC" id="EQC-X3-ot7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="wc3-2e-u0O">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wc3-2e-u0O" secondAttribute="height" multiplier="5:2" constant="-90" id="YYm-sg-G8a"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksI-LX-TOC">
+                    <rect key="frame" x="0.0" y="186" width="375" height="481"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wc3-2e-u0O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W77-3v-Jwz"/>
+                <constraint firstItem="wc3-2e-u0O" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="XJs-uW-uun"/>
+                <constraint firstItem="ksI-LX-TOC" firstAttribute="width" secondItem="wc3-2e-u0O" secondAttribute="width" id="Y1V-O7-f3w"/>
+                <constraint firstItem="ksI-LX-TOC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="YfQ-K9-qTL"/>
+                <constraint firstItem="ksI-LX-TOC" firstAttribute="top" secondItem="wc3-2e-u0O" secondAttribute="bottom" id="cky-bY-rGc"/>
+                <constraint firstAttribute="bottom" secondItem="ksI-LX-TOC" secondAttribute="bottom" id="hmv-ia-Wnp"/>
+                <constraint firstItem="wc3-2e-u0O" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lAm-OO-Bhk"/>
+                <constraint firstItem="ksI-LX-TOC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tzI-ap-nIB"/>
+                <constraint firstItem="wc3-2e-u0O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vlx-OE-gwZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="32.5" y="56.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2" width="1300" height="774"/>
+    </resources>
+</document>
