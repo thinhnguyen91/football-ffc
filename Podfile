@@ -6,9 +6,11 @@ target 'OneMore' do
   use_frameworks!
 
   # Pods for OneMore
-   pod 'IQKeyboardManagerSwift', '~> 5.0.0'
+   pod 'IQKeyboardManagerSwift'
    pod 'SwiftUtils', '~> 4.0'
    pod 'DLPageMenu'
+   pod 'Pages'
+
   target 'OneMoreTests' do
     inherit! :search_paths
     # Pods for testing

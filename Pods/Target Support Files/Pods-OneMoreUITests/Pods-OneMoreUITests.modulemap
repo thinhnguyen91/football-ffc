@@ -1,6 +1,0 @@
-framework module Pods_OneMoreUITests {
-  umbrella header "Pods-OneMoreUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
