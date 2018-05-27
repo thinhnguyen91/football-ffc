@@ -15,7 +15,7 @@ private struct Config {
     static let height = kScreenSize.height * Ratio.horizontal
     static let tintuc = "Tin Tức"
     static let ketqua = "Kết Quả"
-    static let lich = "Lịch Thi Đấu"
+    static let lich = "Lịch Đấu"
 }
 
 enum TabIndex : Int {
@@ -108,16 +108,16 @@ final class HomeViewController: UIViewController {
                                                   width: optionView.frame.width * Ratio.horizontal,
                                                   height: optionView.frame.height * Ratio.horizontal))
         option.frame.origin.y = optionView.frame.origin.y * Ratio.horizontal
-        option.menuItemHeight = 44
+        option.menuItemHeight = 25
         option.menuItemWidth = kScreenSize.width / 3 - 20
-        option.menuTitleColorNormal = .lightGray
-        option.menuTitleColorSelected = .red
-        option.menuItemBackgroundColorNormal = .white
-        option.menuItemBackgroundColorSelected = .white
-        option.menuIndicatorColor = .red
-        option.menuIndicatorHeight = 1
+        option.menuTitleColorNormal = App.Color.gray126
+        option.menuTitleColorSelected = App.Color.yellow251
+        option.menuItemBackgroundColorNormal = App.Color.mainBlue
+        option.menuItemBackgroundColorSelected = .clear
+        option.menuIndicatorColor = App.Color.yellow251
+        option.menuIndicatorHeight = 2
         let pageMenu = DLPageMenu(viewControllers: viewControllers, option: option)
-        pageMenu.backgroundColor = .white
+        pageMenu.backgroundColor = App.Color.mainBlue
         view.addSubview(pageMenu)
     }
 }
