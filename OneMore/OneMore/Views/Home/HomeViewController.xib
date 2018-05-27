@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,36 +20,36 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="wc3-2e-u0O">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="wc3-2e-u0O">
+                    <rect key="frame" x="0.0" y="20" width="375" height="241"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="wc3-2e-u0O" secondAttribute="height" multiplier="5:2" constant="-90" id="YYm-sg-G8a"/>
+                        <constraint firstAttribute="width" secondItem="wc3-2e-u0O" secondAttribute="height" multiplier="5:2" constant="-227.5" id="YYm-sg-G8a"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksI-LX-TOC">
-                    <rect key="frame" x="0.0" y="186" width="375" height="481"/>
+                    <rect key="frame" x="0.0" y="261" width="375" height="551"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="wc3-2e-u0O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W77-3v-Jwz"/>
+                <constraint firstItem="wc3-2e-u0O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W77-3v-Jwz"/>
                 <constraint firstItem="wc3-2e-u0O" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="XJs-uW-uun"/>
                 <constraint firstItem="ksI-LX-TOC" firstAttribute="width" secondItem="wc3-2e-u0O" secondAttribute="width" id="Y1V-O7-f3w"/>
-                <constraint firstItem="ksI-LX-TOC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="YfQ-K9-qTL"/>
+                <constraint firstItem="ksI-LX-TOC" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="YfQ-K9-qTL"/>
                 <constraint firstItem="ksI-LX-TOC" firstAttribute="top" secondItem="wc3-2e-u0O" secondAttribute="bottom" id="cky-bY-rGc"/>
                 <constraint firstAttribute="bottom" secondItem="ksI-LX-TOC" secondAttribute="bottom" id="hmv-ia-Wnp"/>
-                <constraint firstItem="wc3-2e-u0O" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lAm-OO-Bhk"/>
-                <constraint firstItem="ksI-LX-TOC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tzI-ap-nIB"/>
-                <constraint firstItem="wc3-2e-u0O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vlx-OE-gwZ"/>
+                <constraint firstItem="wc3-2e-u0O" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="lAm-OO-Bhk"/>
+                <constraint firstItem="ksI-LX-TOC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tzI-ap-nIB"/>
+                <constraint firstItem="wc3-2e-u0O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="vlx-OE-gwZ"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="32.5" y="56.5"/>
+            <viewLayoutGuide key="safeArea" id="ZRs-Dr-hXp"/>
+            <point key="canvasLocation" x="32.5" y="56"/>
         </view>
     </objects>
     <resources>
-        <image name="2" width="1300" height="774"/>
+        <image name="img1" width="750" height="500"/>
     </resources>
 </document>

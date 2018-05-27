@@ -27,6 +27,8 @@
 		39B700B02099B75000D6F5CF /* NewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B700AE2099B75000D6F5CF /* NewTableViewCell.xib */; };
 		39B700B12099B75000D6F5CF /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B700AF2099B75000D6F5CF /* NewTableViewCell.swift */; };
 		4FF733C9252D3E96529D3781 /* Pods_OneMoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE77DF7BAA163134E8C4F17 /* Pods_OneMoreTests.framework */; };
+		B27BA50620BB0F2700D26302 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27BA50520BB0F2700D26302 /* Config.swift */; };
+		B27BA50820BB0F3D00D26302 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27BA50720BB0F3D00D26302 /* Color.swift */; };
 		CE232802E149C6639EE5D098 /* Pods_OneMoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A831D9B4A376E445E594575C /* Pods_OneMoreUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		95385763B5220DAF835C68AA /* Pods-OneMoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneMoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneMoreTests/Pods-OneMoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FD5964A2854E716767A91AC /* Pods-OneMoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneMoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneMoreUITests/Pods-OneMoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A831D9B4A376E445E594575C /* Pods_OneMoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneMoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27BA50520BB0F2700D26302 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B27BA50720BB0F3D00D26302 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E75F0F0AEBE627BF78470E91 /* Pods-OneMore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneMore.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneMore/Pods-OneMore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +215,8 @@
 			isa = PBXGroup;
 			children = (
 				392B61A3208781B300ED552D /* Font.swift */,
+				B27BA50520BB0F2700D26302 /* Config.swift */,
+				B27BA50720BB0F3D00D26302 /* Color.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -512,11 +518,13 @@
 			files = (
 				39B700B12099B75000D6F5CF /* NewTableViewCell.swift in Sources */,
 				392B619F20876AE400ED552D /* CalendarViewController.swift in Sources */,
+				B27BA50820BB0F3D00D26302 /* Color.swift in Sources */,
 				390E845E2091800A0041A435 /* FcSegmentedControl.swift in Sources */,
 				392B61A2208780CB00ED552D /* Ratio.swift in Sources */,
 				392B61A4208781B300ED552D /* Font.swift in Sources */,
 				392B619520875B4D00ED552D /* NewsViewController.swift in Sources */,
 				392020F12086EF200056D92D /* AppDelegate.swift in Sources */,
+				B27BA50620BB0F2700D26302 /* Config.swift in Sources */,
 				390E8459209176180041A435 /* HomeViewController.swift in Sources */,
 				392B619920875B6200ED552D /* ResultViewController.swift in Sources */,
 			);

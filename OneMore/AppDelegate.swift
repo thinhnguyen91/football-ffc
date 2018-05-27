@@ -36,6 +36,7 @@ extension AppDelegate {
         let navi = UINavigationController(rootViewController: viewController)
         window?.rootViewController = navi
         window?.makeKeyAndVisible()
+        navi.navigationController?.isNavigationBarHidden = true
         UIApplication.shared.statusBarStyle = .lightContent
     }
 
