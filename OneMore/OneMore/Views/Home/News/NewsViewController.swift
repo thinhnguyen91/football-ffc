@@ -17,7 +17,9 @@ private struct Config {
 class NewsViewController: UIViewController {
 
     @IBOutlet fileprivate weak var tableView: UITableView!
-
+    @IBOutlet fileprivate weak var heardView: UIView!
+    @IBOutlet fileprivate weak var newImgeView: UIImageView!
+    
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,9 @@ class NewsViewController: UIViewController {
     // MARK: - Private Function
     private func setupUI() {
         configTableView()
+        view.backgroundColor = App.Color.blue008
+        heardView.backgroundColor = App.Color.red180
+        loadImageGif()
     }
     
     private func configTableView() {
@@ -34,6 +39,10 @@ class NewsViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(NewTableViewCell.self)
         tableView.rowHeight = Config.rowHeightTable
+    }
+    
+    private func loadImageGif() {
+        newImgeView.loadGif(asset: "football")
     }
 }
 

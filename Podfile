@@ -10,6 +10,7 @@ target 'OneMore' do
    pod 'SwiftUtils', '~> 4.0'
    pod 'DLPageMenu'
    pod 'Pages'
+   pod 'Gifu'
 
   target 'OneMoreTests' do
     inherit! :search_paths

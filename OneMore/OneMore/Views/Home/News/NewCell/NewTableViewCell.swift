@@ -9,10 +9,12 @@
 import UIKit
 
 final class NewTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet private weak var viewConten: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        viewConten.backgroundColor = App.Color.blue13
     }
     
 }

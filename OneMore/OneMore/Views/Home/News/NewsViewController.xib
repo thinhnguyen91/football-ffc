@@ -6,12 +6,20 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsViewController" customModule="OneMore" customModuleProvider="target">
             <connections>
+                <outlet property="heardView" destination="1kY-hM-Uss" id="COx-YH-7Cc"/>
+                <outlet property="newImgeView" destination="Hix-lO-buu" id="eDf-Gi-o9V"/>
                 <outlet property="tableView" destination="OrO-w0-3Wb" id="ass-9F-sFJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,12 +29,38 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-w0-3Wb">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OrO-w0-3Wb">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="1kY-hM-Uss">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World CUP 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0n-GD-nAJ">
+                                <rect key="frame" x="10" y="3" width="140" height="21"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new" translatesAutoresizingMaskIntoConstraints="NO" id="Hix-lO-buu">
+                                <rect key="frame" x="323" y="0.0" width="52" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hix-lO-buu" secondAttribute="height" multiplier="37:13" constant="-22" id="6PJ-M7-c6o"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91855569948186533" green="0.32433678219043394" blue="0.17049753186577143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hix-lO-buu" firstAttribute="top" secondItem="1kY-hM-Uss" secondAttribute="top" id="5mg-cr-lqE"/>
+                            <constraint firstItem="j0n-GD-nAJ" firstAttribute="leading" secondItem="1kY-hM-Uss" secondAttribute="leading" constant="10" id="FD7-Fc-wOL"/>
+                            <constraint firstItem="j0n-GD-nAJ" firstAttribute="centerY" secondItem="1kY-hM-Uss" secondAttribute="centerY" id="L0v-qD-NdG"/>
+                            <constraint firstAttribute="trailing" secondItem="Hix-lO-buu" secondAttribute="trailing" id="XlC-fw-UUA"/>
+                            <constraint firstAttribute="bottom" secondItem="Hix-lO-buu" secondAttribute="bottom" id="Y7k-VF-SKO"/>
+                        </constraints>
+                    </view>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="0.43174958229064941" green="0.91190820932388306" blue="0.907703697681427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.11494948759752828" green="0.13559342641670813" blue="0.34292017488082904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="OrO-w0-3Wb" secondAttribute="trailing" id="4Hg-Fu-2Dw"/>
                 <constraint firstItem="OrO-w0-3Wb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DXY-cH-kcX"/>
@@ -34,6 +68,10 @@
                 <constraint firstAttribute="bottom" secondItem="OrO-w0-3Wb" secondAttribute="bottom" id="eG7-ju-eE7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="72.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="new" width="391" height="252"/>
+    </resources>
 </document>

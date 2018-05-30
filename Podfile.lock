@@ -1,11 +1,13 @@
 PODS:
   - DLPageMenu (1.2.0)
+  - Gifu (3.0.0)
   - IQKeyboardManagerSwift (5.0.8)
   - Pages (2.0.2)
   - SwiftUtils (4.0.1)
 
 DEPENDENCIES:
   - DLPageMenu
+  - Gifu
   - IQKeyboardManagerSwift
   - Pages
   - SwiftUtils (~> 4.0)
@@ -13,16 +15,18 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - DLPageMenu
+    - Gifu
     - IQKeyboardManagerSwift
     - Pages
     - SwiftUtils
 
 SPEC CHECKSUMS:
   DLPageMenu: ee79737881774faf06b2ee6d11eb1ab0318589da
+  Gifu: 6543ca2056a3d697097c09fe543ef49348ccc892
   IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
   Pages: 5564ac6035c48fef7a837049314f57507d263b11
   SwiftUtils: b009d391fb2e285392f114238f8b55d2750b80f0
 
-PODFILE CHECKSUM: 13a871488f8444e7dfa96dea51ded08299ff10cb
+PODFILE CHECKSUM: b68205aa4c53ae0388d9aec8e2cc4bdb885fb9e0
 
 COCOAPODS: 1.5.2
